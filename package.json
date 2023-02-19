@@ -1,0 +1,11 @@
+{
+  "name": "pico-y-placa",
+  "version": "1.0.0",
+  "description": "Pico y placa predictor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

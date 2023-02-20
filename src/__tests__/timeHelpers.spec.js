@@ -1,4 +1,4 @@
-import { isRestrictedByHours } from "../timeHelpers";
+import { isRestrictedByHours, getDayNumber } from "../timeHelpers";
 import { describe, it, expect } from "vitest";
 
 describe("isRestrictedByHours", () => {
@@ -15,6 +15,14 @@ describe("isRestrictedByHours", () => {
   describe("When it receives an hour that is not inside any of the ranges", () => {
     it("should return false", () => {
       expect(isRestrictedByHours("12:30")).toBe(false);
+    });
+  });
+});
+describe("getDayNumber", () => {
+  describe("When it receives a Date", () => {
+    it("should return the number of the day", () => {
+      // Monday 20th
+      expect(getDayNumber("2023-02-20")).toBe(1);
     });
   });
 });

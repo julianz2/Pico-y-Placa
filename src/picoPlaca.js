@@ -26,7 +26,5 @@ export const picoPlacaValidator = (plate, date, time) => {
   if (!isWeekDay(dayNumber)) {
     throw new Error("The inserted date is a weekend");
   }
-  console.log(lastDigit);
-  console.log(dayNumber);
   return isRestrictedByDay(lastDigit, dayNumber) && isRestrictedByHours(time);
 };

@@ -1,6 +1,7 @@
-function readData(message) {
-  const data = window.prompt(message);
+function llamado() {
+  const plate = document.getElementById("plate").value;
+  const date = document.getElementById("date").value;
+  const time = document.getElementById("time").value;
+
+  alert(`Los valores ingresados son: ${plate}, ${date} y ${time}`);
 }
-const plate = readData("Write the plate of the car:");
-const date = readData("Write the date(Example:20-02-2023):");
-const time = readData("Write the time you want to leave(Example: 15:35):");

@@ -9,17 +9,17 @@ const lastDigit = (plate) => {
   const plateSplit = plate.split("");
   return parseInt(plateSplit[plateSplit.length - 1]);
 };
-const numberDay = (date) => {
+export const numberDay = (date) => {
   return parseInt(new Date(date).getDay()) + 1;
 };
-const dayVerification = (plate, date) => {
+export const dayVerification = (plate, date) => {
   const nowDay = Object.keys(plateData).find(
     (item) => parseInt(item) === numberDay(date)
   );
 
   return !plateData[nowDay]?.includes(lastDigit(plate));
 };
-const timeVerification = (time) => {
+export const timeVerification = (time) => {
   const morningHours = {
     start: new Date().setHours(7, 0),
     end: new Date().setHours(9, 30),

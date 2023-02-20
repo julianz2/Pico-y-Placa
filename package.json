@@ -4,8 +4,20 @@
   "description": "Pico y placa predictor",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julianz2/Pico-y-Placa.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/julianz2/Pico-y-Placa/issues"
+  },
+  "homepage": "https://github.com/julianz2/Pico-y-Placa#readme",
+  "devDependencies": {
+    "vitest": "^0.28.5"
+  }
 }

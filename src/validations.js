@@ -1,4 +1,6 @@
-const validatePlateInput = (plate) => (plate ? !isNaN(plate) : false);
-const validateDate = (date) => date instanceof Date && !isNaN(date.valueOf());
+export const validatePlateInput = (plate) => (plate ? plate : false);
+export const validateDate = (date) =>
+  date instanceof Date && !isNaN(date.valueOf());
 const timeRegex = /^([01]\d|2[0-3]):([0-5]\d)$/;
-const validateTime = (time) => timeRegex.test(time);
+export const validateTime = (time) => timeRegex.test(time);
+export const isWeekDay = (day) => !(day === 0 || day == 6);

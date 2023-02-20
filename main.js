@@ -1,7 +1,6 @@
-function llamado() {
-  const plate = document.getElementById("plate").value;
-  const date = document.getElementById("date").value;
-  const time = document.getElementById("time").value;
-
-  alert(`Los valores ingresados son: ${plate}, ${date} y ${time}`);
+import { picoPlacaValidator } from "./src/picoPlaca";
+try {
+  console.log(picoPlacaValidator("PDA-2675", "2023-02-22T00:00:00", "09:31"));
+} catch (error) {
+  console.warn(error.message);
 }

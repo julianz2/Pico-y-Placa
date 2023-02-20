@@ -14,5 +14,5 @@ export const isRestrictedByDay = (plateDigit, dayNumber) => {
   const nowDay = Object.keys(plateData).find(
     (item) => parseInt(item) === dayNumber
   );
-  return plateData[nowDay]?.includes(plateDigit);
+  return plateData[nowDay].includes(plateDigit);
 };

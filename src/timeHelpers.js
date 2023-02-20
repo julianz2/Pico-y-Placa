@@ -16,4 +16,4 @@ export const isRestrictedByHours = (time) => {
     return true;
   } else return false;
 };
-export const getDayNumber = (date) => parseInt(new Date(date).getDay()) + 1;
+export const getDayNumber = (date) => parseInt(new Date(date).getDay());

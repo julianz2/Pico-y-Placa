@@ -2,9 +2,10 @@
   "name": "pico-y-placa",
   "version": "1.0.0",
   "description": "Pico y placa predictor",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "start": "node -r esm main.js"
   },
   "author": "",
   "license": "ISC",
@@ -19,5 +20,8 @@
   "homepage": "https://github.com/julianz2/Pico-y-Placa#readme",
   "devDependencies": {
     "vitest": "^0.28.5"
+  },
+  "dependencies": {
+    "esm": "^3.2.25"
   }
 }

@@ -22,7 +22,7 @@ describe("getDayNumber", () => {
   describe("When it receives a Date", () => {
     it("should return the number of the day", () => {
       // Monday 20th
-      expect(getDayNumber("2023-02-20")).toBe(1);
+      expect(getDayNumber("2023-02-20T02:00:00")).toBe(1);
     });
   });
 });

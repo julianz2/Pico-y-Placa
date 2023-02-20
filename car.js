@@ -9,11 +9,13 @@ const lastDigit = (plate) => {
   const plateSplit = plate.split("");
   return parseInt(plateSplit[plateSplit.length - 1]);
 };
-const dayVerification = () => {
-  const nowDay = Object.keys(plateData).find((item) => item === "3");
-  console.log(nowDay);
+const dayVerification = (date, plate) => {
+  numberDay = parseInt(new Date(date).getDay()) + 1;
+  console.log(numberDay);
 
-  console.log("siiiiiiiiii");
-  console.log(plateData[nowDay].includes(lastDigit("pda-2675")));
+  const nowDay = Object.keys(plateData).find(
+    (item) => parseInt(item) === numberDay
+  );
+
+  return !plateData[nowDay]?.includes(lastDigit(plate));
 };
-dayVerification();
